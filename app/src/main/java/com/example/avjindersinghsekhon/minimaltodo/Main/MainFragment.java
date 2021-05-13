@@ -29,7 +29,7 @@ import android.widget.TextView;
 
 import com.amulyakhare.textdrawable.TextDrawable;
 import com.amulyakhare.textdrawable.util.ColorGenerator;
-import com.example.avjindersinghsekhon.minimaltodo.About.AboutActivity;
+//import com.example.avjindersinghsekhon.minimaltodo.About.AboutActivity;
 import com.example.avjindersinghsekhon.minimaltodo.AddToDo.AddToDoActivity;
 import com.example.avjindersinghsekhon.minimaltodo.AddToDo.AddToDoFragment;
 import com.example.avjindersinghsekhon.minimaltodo.Analytics.AnalyticsApplication;
@@ -324,13 +324,13 @@ public class MainFragment extends AppDefaultFragment {
         return true;
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.aboutMeMenuItem:
-                Intent i = new Intent(getContext(), AboutActivity.class);
-                startActivity(i);
-                return true;
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//        switch (item.getItemId()) {
+//            case R.id.aboutMeMenuItem:
+//                Intent i = new Intent(getContext(), AboutActivity.class);
+//                startActivity(i);
+//                return true;
 //            case R.id.switch_themes:
 //                if(mTheme == R.style.CustomStyle_DarkTheme){
 //                    addThemeToSharedPreferences(LIGHTTHEME);
@@ -347,15 +347,15 @@ public class MainFragment extends AppDefaultFragment {
 ////                }
 //                this.recreate();
 //                return true;
-            case R.id.preferences:
-                Intent intent = new Intent(getContext(), SettingsActivity.class);
-                startActivity(intent);
-                return true;
-
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-    }
+//            case R.id.preferences:
+//                Intent intent = new Intent(getContext(), SettingsActivity.class);
+//                startActivity(intent);
+//                return true;
+//
+//            default:
+//                return super.onOptionsItemSelected(item);
+//        }
+//    }
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {

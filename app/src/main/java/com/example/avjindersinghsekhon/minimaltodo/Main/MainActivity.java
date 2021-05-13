@@ -8,7 +8,6 @@ import android.support.v7.app.ActionBar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.example.avjindersinghsekhon.minimaltodo.About.AboutActivity;
 import com.example.avjindersinghsekhon.minimaltodo.AppDefault.AppDefaultActivity;
 import com.example.avjindersinghsekhon.minimaltodo.R;
 import com.example.avjindersinghsekhon.minimaltodo.Settings.SettingsActivity;
@@ -45,10 +44,6 @@ public class MainActivity extends AppDefaultActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.aboutMeMenuItem:
-                Intent i = new Intent(this, AboutActivity.class);
-                startActivity(i);
-                return true;
 //            case R.id.switch_themes:
 //                if(mTheme == R.style.CustomStyle_DarkTheme){
 //                    addThemeToSharedPreferences(LIGHTTHEME);
